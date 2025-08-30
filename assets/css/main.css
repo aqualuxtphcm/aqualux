@@ -3800,38 +3800,57 @@ section,
 }
 
 /* ===================================
-   STYLE MENU MOBILE - FINAL STABLE
-   (Desktop không ảnh hưởng)
+   STYLE MENU RESPONSIVE - FINAL
+   Mobile: menu trượt mượt + overlay fade
+   Desktop: giữ nguyên, in hoa
 ===================================*/
 
-/* MOBILE & TABLET MENU */
+/* MOBILE & TABLET */
 @media (max-width: 1199px) {
   /* MENU CONTAINER */
   .navmenu ul {
     background: #fff;
     padding: 20px 0;
+	margin-top:20px;
     box-shadow: -4px 0 25px rgba(0,0,0,0.15);
     position: fixed;
     top: 0;
-    right: -100%; /* ẩn ngoài màn hình */
-    width: 280px;
+    right: 0;
+    width: 350px;
     height: 100vh;
-    transition: right 0.4s ease-in-out;
     overflow-y: auto;
-    z-index: 10000; /* cao hơn overlay */
-    border-radius: 0 0 8px 8px;
+    z-index: 10000;
+    border-radius: 5px 5px 5px 5px;
+
+    /* luôn trong DOM, ẩn bằng transform + opacity */
+    transform: translateX(100%);
+    opacity: 0;
+    transition: transform 0.45s cubic-bezier(0.25, 1, 0.5, 1),
+                opacity 0.35s ease;
   }
 
   /* Khi mở menu */
   .mobile-nav-active .navmenu ul {
-    right: 0;
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  /* HEADER TRÊN CÙNG MENU MOBILE - AquaLux */
+  .mobile-menu-header {
+    font-size: 30px;
+    font-weight: 700;
+    color: #4154f1;
+    text-align: left;
+    padding-left: 10px;
+    border-bottom: 1px solid #eee;
+    margin-top: -20px;
   }
 
   /* MENU ITEM */
   .navmenu a {
     display: flex;
     align-items: center;
-    justify-content: flex-start; /* icon + text bám trái */
+    justify-content: flex-start;
     gap: 12px;
     padding: 14px 22px;
     font-size: 16px;
@@ -3840,13 +3859,14 @@ section,
     text-align: left;
     transition: all 0.3s ease;
     position: relative;
-    z-index: 10000; /* luôn nằm trên overlay */
+    z-index: 10000;
+    text-transform: capitalize; /* mobile: chỉ hoa chữ cái đầu */
   }
 
   /* ICON */
   .navmenu a i {
     font-size: 20px;
-    color: #777; /* xám nhạt mặc định */
+    color: #777;
     transition: 0.3s;
   }
 
@@ -3868,7 +3888,7 @@ section,
     cursor: pointer;
     transition: 0.3s;
     margin-left: 15px;
-    z-index: 10002; /* cao nhất */
+    z-index: 10002;
   }
   .mobile-nav-toggle:hover {
     color: #FF3366;
@@ -3888,34 +3908,36 @@ section,
     position: fixed;
     top: 15px;
     right: 15px;
-    z-index: 10001; /* cao hơn menu */
+    z-index: 10001;
     box-shadow: 0 3px 12px rgba(0,0,0,0.2);
   }
 
-  /* OVERLAY RIÊNG */
+  /* OVERLAY (fade in/out) */
   .mobile-nav-overlay {
     position: fixed;
     inset: 0;
     background: rgba(0,0,0,0.45);
-    z-index: 998;   /* dưới menu */
-    display: none;  /* mặc định ẩn */
+    z-index: 998;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.35s ease;
   }
   .mobile-nav-active .mobile-nav-overlay {
-    display: block;
+    opacity: 1;
+    pointer-events: auto;
   }
 }
 
-/* Icon ẩn trên desktop */
+/* DESKTOP */
 @media (min-width: 1200px) {
-   .navmenu a {
-    text-transform: uppercase; /* 🔥 desktop in hoa toàn bộ */
+  .navmenu a {
+    text-transform: uppercase; /* desktop: in hoa toàn bộ */
   }
-  .navmenu a i {
-    display: none;
-	
+  .navmenu a i,
+  .mobile-menu-header {
+    display: none; /* ẩn icon và header riêng của mobile */
   }
 }
-
 
 
 
