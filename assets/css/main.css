@@ -3641,6 +3641,285 @@ section,
         }
 		
 	/* End Form Đặt Hàng */	
+	
+	/* ================================
+   TÙY CHỈNH FORM ĐẶT HÀNG (MOBILE)
+   ================================ */
+@media (max-width: 768px) {
+
+  /* Toàn bộ form trong modal */
+  #checkout-form {
+    padding: 10px !important; /* thu hẹp padding để lề nhỏ hơn */
+  }
+
+  /* Các nhóm input */
+  #checkout-form .form-control,
+  #checkout-form .form-select,
+  #checkout-form textarea {
+    padding: 10px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+  }
+
+  /* Khoảng cách giữa các input */
+  #checkout-form .row .col-sm-6,
+  #checkout-form .col-12 {
+    margin-bottom: 12px;
+  }
+
+  /* Thẻ card bao quanh form */
+  #checkoutModal .card-custom {
+    padding: 15px !important; /* thu hẹp lề card */
+    border-radius: 8px;
+  }
+
+  /* Khu vực chứa nút */
+  #checkout-form .d-flex {
+    flex-direction: column !important; /* ép 2 nút xuống dọc */
+    gap: 10px;
+  }
+
+  #checkout-form .d-flex .btn {
+    width: 100%;
+    font-size: 16px;
+    padding: 12px 0;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+
+  /* Nút phụ: Tiếp tục mua hàng */
+  #checkout-form .btn-secondary {
+    background-color: #6c757d;
+    color: #fff;
+    border: none;
+  }
+  #checkout-form .btn-secondary:hover {
+    background-color: #5a6268;
+  }
+
+  /* Nút chính: Xác nhận đặt hàng */
+  #checkout-form .btn-primary {
+    background: linear-gradient(135deg, #007bff, #00c6ff);
+    border: none;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3);
+  }
+  #checkout-form .btn-primary:hover {
+    background: linear-gradient(135deg, #0056b3, #0099cc);
+    box-shadow: 0 6px 12px rgba(0, 123, 255, 0.4);
+    transform: translateY(-2px);
+  }
+  #checkout-form .btn-primary:active {
+    transform: translateY(0);
+    box-shadow: 0 3px 6px rgba(0, 123, 255, 0.3);
+  }
+}
+
+/* =======================
+   Checkout Modal - Global
+   (áp dụng cả desktop & mobile)
+   ======================= */
+
+/* Card chung (Form + Đơn hàng) */
+#checkoutModal .card-custom {
+  border-radius: 12px;
+  padding: 18px !important;
+  margin-bottom: 15px;
+  background: #fff;
+
+  /* Shadow hiện đại */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12), 
+              0 2px 6px rgba(0,0,0,0.08);
+}
+
+/* Input, Select, Textarea mặc định */
+#checkoutModal .form-control,
+#checkoutModal .form-select,
+#checkoutModal textarea {
+  background-color: #f9f9f9;   /* nền xám nhạt */
+  border: 1px solid #ddd;      /* viền nhạt */
+  border-radius: 8px;          /* bo góc */
+  transition: all 0.2s ease-in-out;
+}
+
+/* Khi focus (người dùng click vào) */
+#checkoutModal .form-control:focus,
+#checkoutModal .form-select:focus,
+#checkoutModal textarea:focus {
+  background-color: #e8f0fe;   /* nền xanh nhạt */
+  border-color: #3b82f6;       /* viền xanh dương */
+  box-shadow: 0 0 0 3px rgba(59,130,246,0.25); /* glow xanh */
+  outline: none;
+}
+
+/* Label/Icon đổi màu khi input focus */
+#checkoutModal .form-label:has(+ .form-control:focus),
+#checkoutModal .form-label:has(+ .form-select:focus),
+#checkoutModal .form-label:has(+ textarea:focus) {
+  color: #3b82f6;
+}
+
+/* =======================
+   Mobile chỉnh gọn lề
+   ======================= */
+@media (max-width: 768px) {
+  /* Giảm padding body modal */
+  #checkoutModal .modal-body {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+
+  /* Giảm khoảng cách row */
+  #checkoutModal .row {
+    margin-left: -5px !important;
+    margin-right: -5px !important;
+  }
+
+  /* Các cột chiếm full width, lề nhỏ */
+  #checkoutModal .col-md-7.col-lg-8,
+  #checkoutModal .col-md-5.col-lg-4 {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+  }
+
+  /* Card trên mobile gọn hơn một chút */
+  #checkoutModal .card-custom {
+    padding: 14px !important;
+  }
+
+  /* Tiêu đề gọn */
+  #checkoutModal h4 {
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+  #donhangcuaban {
+	  padding-top: 20px !important;
+	 }
+}
+
+/* ===================================
+   STYLE MENU MOBILE - FINAL STABLE
+   (Desktop không ảnh hưởng)
+===================================*/
+
+/* MOBILE & TABLET MENU */
+@media (max-width: 1199px) {
+  /* MENU CONTAINER */
+  .navmenu ul {
+    background: #fff;
+    padding: 20px 0;
+    box-shadow: -4px 0 25px rgba(0,0,0,0.15);
+    position: fixed;
+    top: 0;
+    right: -100%; /* ẩn ngoài màn hình */
+    width: 280px;
+    height: 100vh;
+    transition: right 0.4s ease-in-out;
+    overflow-y: auto;
+    z-index: 10000; /* cao hơn overlay */
+    border-radius: 0 0 8px 8px;
+  }
+
+  /* Khi mở menu */
+  .mobile-nav-active .navmenu ul {
+    right: 0;
+  }
+
+  /* MENU ITEM */
+  .navmenu a {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* icon + text bám trái */
+    gap: 12px;
+    padding: 14px 22px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #012970;
+    text-align: left;
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 10000; /* luôn nằm trên overlay */
+  }
+
+  /* ICON */
+  .navmenu a i {
+    font-size: 20px;
+    color: #777; /* xám nhạt mặc định */
+    transition: 0.3s;
+  }
+
+  /* HOVER + ACTIVE */
+  .navmenu a:hover,
+  .navmenu .active {
+    background: #f3f6ff;
+    color: #FF3366;
+  }
+  .navmenu a:hover i,
+  .navmenu .active i {
+    color: #FF3366;
+  }
+
+  /* NÚT 3 GẠCH (OPEN MENU) */
+  .mobile-nav-toggle {
+    font-size: 28px;
+    color: #4154f1;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-left: 15px;
+    z-index: 10002; /* cao nhất */
+  }
+  .mobile-nav-toggle:hover {
+    color: #FF3366;
+  }
+
+  /* NÚT X ĐÓNG MENU */
+  .mobile-nav-active .mobile-nav-toggle {
+    background: #FF3366;
+    border-radius: 50%;
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff !important;
+    font-size: 24px;
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    z-index: 10001; /* cao hơn menu */
+    box-shadow: 0 3px 12px rgba(0,0,0,0.2);
+  }
+
+  /* OVERLAY RIÊNG */
+  .mobile-nav-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.45);
+    z-index: 998;   /* dưới menu */
+    display: none;  /* mặc định ẩn */
+  }
+  .mobile-nav-active .mobile-nav-overlay {
+    display: block;
+  }
+}
+
+/* Icon ẩn trên desktop */
+@media (min-width: 1200px) {
+   .navmenu a {
+    text-transform: uppercase; /* 🔥 desktop in hoa toàn bộ */
+  }
+  .navmenu a i {
+    display: none;
+	
+  }
+}
+
+
+
+
+
      /* --------------- */
 	 .Giabanbandau {text-decoration: line-through;
 					color:gray;
