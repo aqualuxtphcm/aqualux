@@ -56,17 +56,17 @@
       </a>
 
       <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="#hero">GIỚI THIỆU</a></li>
-          <li><a href="#about">VỀ AQUALUX</a></li>
-          <li><a href="#alt-features">ƯU ĐIỂM</a></li>
-          <li><a href="#portfolio">SẢN PHẨM</a></li>
-          <li><a href="#call-to-action-2">KHUYẾN MÃI</a></li>
-          <li><a href="#faq">FAQ</a></li>
-		  <li><a href="#testimonials">ĐÁNH GIÁ</a></li>
-          <li><a href="#recent-posts">BLOG</a></li>
-          <li><a href="#contact">LIÊN HỆ</a></li>
-        </ul>
+		  <ul>
+			<li><a href="#hero"><i class="bi bi-house"></i> Giới Thiệu</a></li>
+			<li><a href="#about"><i class="bi bi-info-circle"></i> Về AquaLux</a></li>
+			<li><a href="#alt-features"><i class="bi bi-star"></i> Ưu Điểm</a></li>
+			<li><a href="#portfolio"><i class="bi bi-box"></i> Sản Phẩm</a></li>
+			<li><a href="#call-to-action-2"><i class="bi bi-gift"></i> Khuyến Mãi</a></li>
+			<li><a href="#faq"><i class="bi bi-question-circle"></i> FAQ</a></li>
+			<li><a href="#testimonials"><i class="bi bi-chat-dots"></i> Đánh Giá</a></li>
+			<li><a href="#recent-posts"><i class="bi bi-journal-text"></i> Blog</a></li>
+			<li><a href="#contact"><i class="bi bi-telephone"></i> Liên Hệ</a></li>
+		  </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
@@ -1754,10 +1754,10 @@ Phù hợp với cá betta, thủy sinh mini đến cả hồ trung bình.</p>
                 <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
             </div>
             <div class="modal-body p-5">
-                <div class="row">
+                <div class="row" style="margin-top:-38px">
                     <div class="col-md-7 col-lg-8">
-                        <h4 class="checkout-title mb-3">Thông Tin Giao Hàng</h4>
-                        <div class="card card-custom p-4">
+                        <h4 class="checkout-title mb-3" style="color:#0d6efd">Thông Tin Giao Hàng</h4>
+                        <div class="card card-custom p-4" style="margin-bottom:0;">
                             <form id="checkout-form" class="needs-validation" novalidate>
                                 <div class="row g-3">
                                     <div class="col-sm-6">
@@ -1838,8 +1838,8 @@ Phù hợp với cá betta, thủy sinh mini đến cả hồ trung bình.</p>
                         </div>
                     </div>
 
-                    <div class="col-md-5 col-lg-4">
-                        <h4 class="d-flex justify-content-between align-items-center mb-3">
+                    <div class="col-md-5 col-lg-4" >
+                        <h4 id="donhangcuaban" class="d-flex justify-content-between align-items-center mb-3">
                             <span class="text-primary">Đơn Hàng Của Bạn</span>
                             <span class="badge bg-primary rounded-pill" id="checkout-item-count">0</span>
                         </h4>
@@ -2472,6 +2472,7 @@ Phù hợp với cá betta, thủy sinh mini đến cả hồ trung bình.</p>
 			popupCloseBtn.addEventListener('click', closePopup);
 			popup.addEventListener('click', (e)=>{ if(e.target === popup) closePopup(); });
    </script>
+
 
 </body>
 
