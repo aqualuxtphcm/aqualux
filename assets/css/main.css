@@ -3807,28 +3807,7 @@ section,
 
 /* MOBILE & TABLET */
 @media (max-width: 1199px) {
-  /* MENU CONTAINER */
-  .navmenu ul {
-    background: #fff;
-    padding: 20px 0;
-	margin-top:20px;
-    box-shadow: -4px 0 25px rgba(0,0,0,0.15);
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 350px;
-    height: 100vh;
-    overflow-y: auto;
-    z-index: 10000;
-    border-radius: 5px 5px 5px 5px;
-
-    /* luôn trong DOM, ẩn bằng transform + opacity */
-    transform: translateX(100%);
-    opacity: 0;
-    transition: transform 0.45s cubic-bezier(0.25, 1, 0.5, 1),
-                opacity 0.35s ease;
-  }
-
+  
   /* Khi mở menu */
   .mobile-nav-active .navmenu ul {
     transform: translateX(0);
@@ -3841,9 +3820,9 @@ section,
     font-weight: 700;
     color: #4154f1;
     text-align: left;
-    padding-left: 10px;
-    border-bottom: 1px solid #eee;
-    margin-top: -20px;
+    padding: 2px 10px;
+    border-bottom: 2px solid #eee;
+    margin-top: -10px;
   }
 
   /* MENU ITEM */
@@ -3853,14 +3832,16 @@ section,
     justify-content: flex-start;
     gap: 12px;
     padding: 14px 22px;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 600;
     color: #012970;
     text-align: left;
     transition: all 0.3s ease;
     position: relative;
     z-index: 10000;
-    text-transform: capitalize; /* mobile: chỉ hoa chữ cái đầu */
+    /*text-transform: capitalize;  mobile: chỉ hoa chữ cái đầu */
+	text-transform: uppercase;
+	border-bottom: 1px solid #eee;
   }
 
   /* ICON */
@@ -3873,12 +3854,13 @@ section,
   /* HOVER + ACTIVE */
   .navmenu a:hover,
   .navmenu .active {
-    background: #f3f6ff;
+    background: #c8d7d2;
     color: #FF3366;
   }
   .navmenu a:hover i,
   .navmenu .active i {
     color: #FF3366;
+	background: #6db5cb;
   }
 
   /* NÚT 3 GẠCH (OPEN MENU) */
