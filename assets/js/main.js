@@ -156,6 +156,25 @@
       }
     }
   });
+  // Nút sản phẩm tăng giảm
+		  document.querySelectorAll('.quantity-control').forEach(function(container) {
+			  const input = container.querySelector('.quantity-input');
+			  const btnMinus = container.querySelector('.btn-minus');
+			  const btnPlus = container.querySelector('.btn-plus');
+
+			  if (btnMinus) {
+				btnMinus.addEventListener('click', () => {
+				  let val = parseInt(input.value) || 1;
+				  if (val > 1) input.value = val - 1;
+				});
+			  }
+			  if (btnPlus) {
+				btnPlus.addEventListener('click', () => {
+				  let val = parseInt(input.value) || 1;
+				  input.value = val + 1;
+				});
+			  }
+		  });
 
   // Scrollspy highlight menu
   const navLinks = document.querySelectorAll("#navmenu a");
