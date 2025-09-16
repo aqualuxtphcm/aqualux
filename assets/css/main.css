@@ -861,16 +861,18 @@ section,
 
 .hero .hero-content h1 .accent-text {
   color: var(--accent-color);
+ /*  font-size:47px; */
 }
 
 @media (max-width: 992px) {
   .hero .hero-content {
-    text-align: center;
+    text-align: justify;
     margin-bottom: 3rem;
   }
-
+  
   .hero .hero-content h1 {
     font-size: 2.5rem;
+	text-align: left;
   }
 
   .hero .hero-content .hero-buttons {
@@ -1323,6 +1325,38 @@ section,
   font-family: var(--heading-font);
   font-size: 16px;
 }
+
+
+/* Responsive spacing fix for mobile (stronger) */
+@media (max-width: 768px) {
+  section,
+  .section {
+    padding: 20px 0 !important;
+  }
+  .section-title,
+  .section-header {
+    margin-top: 10px !important;
+    margin-bottom: 20px !important;
+  }
+  #stats.section {
+    padding-top: 10px !important;
+  }
+
+  /* Giảm khoảng cách giữa các khối stats trên mobile */
+  .stats .row {
+    --bs-gutter-y: 10px; /* Giảm khoảng cách dọc giữa các cột */
+  }
+  .stats-item {
+    padding: 10px !important; /* Giảm padding bên trong */
+    margin-bottom: 6px !important;
+  }
+  .stats-item h4 {
+    margin-bottom: 5px; /* Tiêu đề sát hơn đoạn mô tả */
+  }
+  .main {margin-top:100px !important;}
+}
+
+
 
 /*--------------------------------------------------------------
 # Features Section
