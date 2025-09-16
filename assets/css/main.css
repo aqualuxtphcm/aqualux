@@ -1331,25 +1331,25 @@ section,
 @media (max-width: 768px) {
   section,
   .section {
-    padding: 20px 0 !important;
+    padding: 23px 0 !important;
   }
-  .section-title,
-  .section-header {
-    margin-top: 10px !important;
-    margin-bottom: 20px !important;
-  }
+ 
   #stats.section {
-    padding-top: 10px !important;
+    
+	background:#f5f6fe;
+  }
+  .stats .stats-item {
+  
+  box-shadow: 0px 0 5px #c8d7d2;
+  
+}
+
+  #features.section {
+    
+	background:#fff !important;
   }
 
-  /* Giảm khoảng cách giữa các khối stats trên mobile */
-  .stats .row {
-    --bs-gutter-y: 10px; /* Giảm khoảng cách dọc giữa các cột */
-  }
-  .stats-item {
-    padding: 10px !important; /* Giảm padding bên trong */
-    margin-bottom: 6px !important;
-  }
+  
   .stats-item h4 {
     margin-bottom: 5px; /* Tiêu đề sát hơn đoạn mô tả */
   }
