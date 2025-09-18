@@ -207,4 +207,26 @@
   window.addEventListener("load", () => {
     AOS.refreshHard();
   });
+  
+ 
+
+//!-- JS: thêm class has-promo khi #gia-khuyen-mai hiển thị 
+
+document.addEventListener("DOMContentLoaded", function () {
+  const ctaSection = document.getElementById("call-to-action-2");
+  const gia = document.getElementById("gia-khuyen-mai");
+  if (!ctaSection || !gia) return;
+
+  function updateClass() {
+    const visible = window.getComputedStyle(gia).display !== "none" && gia.offsetWidth > 0 && gia.offsetHeight > 0;
+    ctaSection.classList.toggle("has-promo", visible);
+  }
+
+  updateClass();
+
+  // Nếu trạng thái hiển thị thay đổi (JS khác ẩn/hiện), vẫn tự cập nhật
+  const observer = new MutationObserver(updateClass);
+  observer.observe(gia, { attributes: true, attributeFilter: ["style", "class"] });
+});
+
 })();
