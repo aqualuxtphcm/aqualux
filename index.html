@@ -7,7 +7,7 @@
 	<meta content="Khám phá 36 sản phẩm chất lượng từ AquaLux với giá tốt." property="og:description"/>
 	<meta content="website" property="og:type"/>
 	<meta content="https://aqualux.store" property="og:url"/>
-	<meta content="assets/img/logo.png" property="og:image"/>
+	<meta content="https://aqualuxtphcm.github.io/aqualux/assets/img/logo.png" property="og:image"/>
 	<meta charset="utf-8"/>
 	<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 	<title>AquaLux - Hồ Cá Đúc, Phụ Kiện Hồ Cá, Thức Ăn &amp; Thuốc Cá Cảnh</title>
@@ -15,7 +15,7 @@
 	<meta content="hồ cá đúc, hồ cá cảnh, hồ kính đúc, phụ kiện hồ cá, đèn hồ cá, thủy sinh, thức ăn cá cảnh, thuốc vi sinh, hồ cá đẹp, hồ cá mini" name="keywords"/>
 	<!-- Favicons -->
 	<link href="https://aqualuxtphcm.github.io/aqualux/assets/img/favicon.png" rel="icon"/>
-	<link href="https://aqualuxtphcm.github.io/aqualux/assets/img/apple-touch-icon.png" rel="apple-touch-icon"/>
+	<link href="https://aqualuxtphcm.github.io/aqualux/assets/img/aqualux-touch-icon.png" rel="apple-touch-icon"/>
 	<!-- Fonts -->
 	<link href="https://fonts.googleapis.com" rel="preconnect"/>
 	<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -857,7 +857,7 @@
       <!-- Hình ảnh bên trái -->
       <div id="hocaduccta" class="col-lg-6" data-aos="fade-right" data-aos-delay="400" style="margin-top:-200px">
         <div class="cta-image-wrapper">
-          <img alt="Call to Action" class="img-fluid rounded-4" src="assets/img/Ho-ca-duc/cta-4.png"/>
+          <img alt="Call to Action" class="img-fluid rounded-4" src="https://aqualuxtphcm.github.io/aqualux/assets/img/Ho-ca-duc/cta-4.png"/>
           <div class="cta-pattern"></div>
         </div>
       </div>
@@ -868,7 +868,7 @@
           
           <!-- Đồng hồ đếm ngược -->
           <div class="countdown-timer mb-4" style="margin-top:12px">
-            <h3 id="countdown-title" style="color:blue;">⏳ Khuyến mãi sẽ kết thúc sau:</h3>
+            <h3 id="countdown-title" style="color:#012970;">⏳ Khuyến mãi sẽ kết thúc sau:</h3>
             <div class="d-flex gap-3 fs-4 fw-bold text-danger" id="timer">
               <div><span id="days">00</span> Ngày</div>
               <div><span id="hours">00</span> Giờ</div>
@@ -1682,8 +1682,8 @@
 		};
 
 		// Thời gian khuyến mãi
-		const ngayBatDau = new Date("2025-09-18T19:53:10");
-		const ngayKetThuc = new Date("2025-09-19T19:53:10");
+		const ngayBatDau = new Date("2025-09-18T19:42:00");
+		const ngayKetThuc = new Date("2025-09-19T19:42:10");
 
 		// Các phần tử DOM cho đồng hồ và giá khuyến mãi
 		const giaGocEl = document.getElementById("gia-goc");
@@ -1973,7 +1973,6 @@
 				giaGocEl.style.display = "inline-block";
 				giabandauEl.classList.add("Giabanbandau");
 				timer.classList.remove("timer-ended");
-				<!-- hocaduccta.style.marginTop = ""; -->
 				hocaduccta.style.marginTop = "-200px";
 				if(addToCartPromoBtn) {
 					addToCartPromoBtn.disabled = false;
@@ -2008,7 +2007,6 @@
 				giaGocEl.style.display = "block";
 				giabandauEl.classList.remove("Giabanbandau");
 				timer.classList.add("timer-ended");
-				<!-- hocaduccta.style.marginTop = ""; -->
 				hocaduccta.style.marginTop = "-143px";
 				if(addToCartPromoBtn) {
 					addToCartPromoBtn.disabled = true;
@@ -2034,7 +2032,6 @@
 				giaKMEl.style.display = "none";
 				giaGocEl.style.display = "block";
 				giabandauEl.classList.remove("Giabanbandau");
-				<!-- hocaduccta.style.marginTop = ""; -->
 				hocaduccta.style.marginTop = "-143px";
 				if(addToCartPromoBtn) {
 					addToCartPromoBtn.disabled = true;
