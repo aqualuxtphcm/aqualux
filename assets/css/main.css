@@ -2096,46 +2096,178 @@ section,
 # Thêm mới
 --------------------------------------------------------------*/
 /* Form thông báo khuyến mãi */
-	/* Overlay */
-	.promo-popup{
-	  position:fixed; inset:0;
-	  display:flex; align-items:center; justify-content:center;
-	  background:rgba(0,0,0,.6);
-	  z-index:9999;
-	  opacity:0; visibility:hidden;
-	}
+	/* Google font */
 
-	/* Khung form */
-	.promo-popup .popup-content{
-	  position:relative;                /* Quan trọng: để nút đóng bám góc phải */
-	  background:#fff; border-radius:16px;
-	  padding:30px 40px; width:min(90vw,420px);
-	  box-shadow:0 12px 30px rgba(0,0,0,.25);
-	  transform:scale(.9); opacity:0;
-	  text-align:center;
-	}
+/* Overlay */
+.promo-popup {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+  font-family: 'Roboto', Arial;
+}
 
-	/* Nút đóng góc phải */
-	.promo-popup .popup-close{
-	  position:absolute; top:12px; right:16px;   /* Luôn ở góc phải */
-	  font-size:26px; line-height:1; border:0; background:transparent;
-	  color:#888; cursor:pointer; z-index:1;
-	}
-	.promo-popup .popup-close:hover{ color:#000; }
+/* Khung nội dung */
+.promo-popup .popup-content {
+  position: relative;
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 24px 40px;
+  width: min(90vw, 420px);
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  transform: scale(.9);
+  opacity: 0;
+  text-align: center;
+  color: #333;
+}
+/* Logo trong popup */
+.popup-logo {
+  display: block;
+  max-width: 150px;     /* điều chỉnh kích thước */
+  margin: -50px auto 1px;  /* căn giữa và cách dưới 16px */
+}
 
-	/* Mở */
-	.promo-popup.show{ animation:fadeIn .4s ease forwards; }
-	.promo-popup.show .popup-content{ animation:scaleIn .4s ease forwards; }
 
-	/* Đóng */
-	.promo-popup.closing{ animation:fadeOut .4s ease forwards; }
-	.promo-popup.closing .popup-content{ animation:scaleOut .4s ease forwards; }
+/* Tiêu đề */
+#popup-title {
+  /* font-size: 25px; */
+  font-weight: 700;
+  color: #002d6b; /* xanh dương chủ đạo */
+  margin-bottom: 1px;
+  margin-top: -30px;
+}
 
-	/* Keyframes */
-	@keyframes fadeIn{ from{opacity:0;visibility:visible;} to{opacity:1;visibility:visible;} }
-	@keyframes scaleIn{ from{transform:scale(.9);opacity:0;} to{transform:scale(1);opacity:1;} }
-	@keyframes fadeOut{ from{opacity:1;visibility:visible;} to{opacity:0;visibility:hidden;} }
-	@keyframes scaleOut{ from{transform:scale(1);opacity:1;} to{transform:scale(.9);opacity:0;} }
+/* Nội dung chính */
+#popup-message {
+  font-size: 26px;
+  font-weight: 600;
+  color: #ff9800; /* màu nhấn vàng cam */
+  margin-bottom: 15px;
+  line-height: 1.3;
+  /* border-radius: 20px;    */     /* bo góc 8px */
+  /* border: 1px solid #000;  */   /* viền nét liền (solid) */
+  padding: 10px 10px 10px 10px;
+  /* Background:#f3f4f6; */
+  /* box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px; */
+}
+
+/* Nút đóng */
+.promo-popup .popup-close {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  font-size: 28px;
+  border: none;
+  background: transparent;
+  color: #888;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+.promo-popup .popup-close:hover {
+  color: #000;
+}
+
+/* Đường kẻ */
+.promo-popup hr {
+  border: none;
+  border-top: 1px solid blue;
+  width: 90%;
+  margin: 10px auto 10px;  /* auto sẽ căn giữa theo chiều ngang */
+  
+}
+
+
+/* Dòng liên hệ */
+.contact-line {
+  display: grid;
+  grid-template-columns: auto auto 1fr;
+  column-gap: 8px;
+  align-items: start;
+  max-width: 420px;
+  line-height: 1.6;
+
+  text-align: left; /* Đảm bảo toàn bộ khối liên hệ căn trái */
+  
+}
+
+.contact-line span {
+  display: block;
+  text-align: left;  /* Buộc nội dung địa chỉ căn trái */
+}
+
+.fb-link {
+  color: #1877f2;          /* Màu xanh Facebook */
+  text-decoration: none;
+  font-weight: 500;
+  
+}
+
+.fb-link:hover {
+  text-decoration: underline;
+}
+
+
+/* Nút CTA */
+.cta-btn {
+  margin-top: 35px;
+  background: #1a73e8;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  padding: 6px 50px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  
+}
+.cta-btn:hover {
+  background: #1558b0;
+  transform: translateY(-2px);
+}
+
+/* Hiệu ứng mở/đóng */
+.promo-popup.show {
+  animation: fadeIn .4s ease forwards;
+}
+.promo-popup.show .popup-content {
+  animation: scaleIn .4s ease forwards;
+}
+.promo-popup.closing {
+  animation: fadeOut .4s ease forwards;
+}
+.promo-popup.closing .popup-content {
+  animation: scaleOut .4s ease forwards;
+}
+@keyframes fadeIn {
+  from {opacity: 0; visibility: visible;}
+  to {opacity: 1; visibility: visible;}
+}
+@keyframes scaleIn {
+  from {transform: scale(.9); opacity: 0;}
+  to {transform: scale(1); opacity: 1;}
+}
+@keyframes fadeOut {
+  from {opacity: 1; visibility: visible;}
+  to {opacity: 0; visibility: hidden;}
+}
+@keyframes scaleOut {
+  from {transform: scale(1); opacity: 1;}
+  to {transform: scale(.9); opacity: 0;}
+}
+
+/* Responsive nhỏ */
+@media (max-width: 480px) {
+  #popup-title {font-size: 22px;}
+  #popup-message {font-size: 18px;}
+  .cta-btn {font-size: 16px; padding: 10px 20px;}
+}
+
 
 	/* End Form thông báo khuyến mãi */
 /*--------------------------------------------------------------
