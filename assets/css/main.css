@@ -2263,8 +2263,8 @@ section,
 
 /* Responsive nhỏ */
 @media (max-width: 480px) {
-  #popup-title {font-size: 22px;}
-  #popup-message {font-size: 18px;}
+  #popup-title {font-size: 24px;}
+  #popup-message {font-size: 20px;}
   .cta-btn {font-size: 16px; padding: 10px 20px;}
 }
 
