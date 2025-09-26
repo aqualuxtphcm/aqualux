@@ -2287,7 +2287,7 @@ section,
 @media (max-width: 576px) {
   #popup-title {font-size: 28px;}
   #popup-message {font-size: 26px;}
-  .cta-btn {font-size: 16px; padding: 10px 20px;}
+  /*.cta-btn {font-size: 16px; padding: 10px 20px;} */
 }
 
 
