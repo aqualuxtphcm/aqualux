@@ -2287,6 +2287,15 @@ section,
 @media (max-width: 576px) {
   #popup-title {font-size: 28px;}
   #popup-message {font-size: 26px;}
+	.promo-popup .popup-content .popup-info {
+	
+	box-shadow: rgba(240, 46, 170, 0.4) 0px 5px,
+				  rgba(240, 46, 170, 0.3) 0px 10px,
+				  rgba(240, 46, 170, 0.2) 0px 15px,
+				  rgba(240, 46, 170, 0.1) 0px 20px,
+				  rgba(240, 46, 170, 0.05) 0px 25px;
+	text-align: left;
+	padding-bottom:1px;
   /*.cta-btn {font-size: 16px; padding: 10px 20px;} */
 }
 
