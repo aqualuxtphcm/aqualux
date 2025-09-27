@@ -2,8 +2,9 @@
 
 <html lang="en">
 <head>
-<meta name="robots" content="index, follow">
-<link rel="sitemap" type="application/xml" title="Sitemap" href="https://aqualux.store/sitemap.xml" />
+    <meta charset="utf-8"/>
+	<meta name="robots" content="index, follow">
+	<link rel="sitemap" type="application/xml" title="Sitemap" href="https://aqualux.store/sitemap.xml" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no">
 	<meta content="AquaLux - Hồ Cá Đúc, Phụ Kiện Hồ Cá, Thức Ăn &amp; Thuốc Cá Cảnh" property="og:title"/>
@@ -74,6 +75,412 @@
 			//});
 		  //}
 		</script>
+		    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            // 1. Organization & LocalBusiness
+            {
+              "@type": ["Organization", "LocalBusiness"],
+              "@id": "https://aqualux.store#organization",
+              "name": "AquaLux",
+              "url": "https://aqualux.store",
+              "logo": "https://aqualuxtphcm.github.io/aqualux/assets/img/logo.webp",
+              "image": "https://aqualuxtphcm.github.io/aqualux/assets/img/logo.webp",
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+84 787 420 355",
+                "contactType": "customer service",
+                "areaServed": "VN",
+                "availableLanguage": ["vi", "en"]
+              },
+              "sameAs": [
+                "https://www.facebook.com/HocaAquaLux",
+                "https://www.youtube.com/@aqualuxofficial",
+                "https://aqualux.store"
+              ],
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "735 Bình Hoà 05 - Khu Phố Đông Ba",
+                "addressLocality": "Phường Bình Hoà",
+                "addressRegion": "Hồ Chí Minh",
+                "postalCode": "70000",
+                "addressCountry": "VN"
+              },
+              "telephone": "+84787420355",
+              "openingHours": "Mo-Sa 08:00-19:00",
+              "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": "10.825674",
+                "longitude": "106.666986"
+              }
+            },
+            
+            // 2. WebSite (Kết nối với Organization)
+            {
+              "@type": "WebSite",
+              "@id": "https://aqualux.store#website",
+              "url": "https://aqualux.store",
+              "name": "AquaLux",
+              "publisher": {"@id": "https://aqualux.store#organization"},
+              "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://aqualux.store/search?q={search_term_string}",
+                "query-input": "required name=search_term_string"
+              }
+            },
+
+            // 3. FAQPage (Đã hợp nhất và tối ưu hóa)
+            {
+              "@type": "FAQPage",
+              "@id": "https://aqualux.store#faq",
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "Hồ cá đúc khác gì so với hồ cá dán thông thường?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Hồ cá đúc AquaLux được sản xuất bằng công nghệ uốn cong liền khối, không có mối nối, an toàn, thẩm mỹ và bền hơn so với hồ cá dán keo thông thường."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Hồ cá đúc có bền không?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Sản phẩm được làm từ kính siêu trong, độ dày từ 4mm đến 5mm, có khả năng chịu lực tốt và bền bỉ theo thời gian."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "AquaLux có những kích thước hồ cá nào?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Hiện tại AquaLux cung cấp nhiều kích thước: 30cm, 35cm, 40cm, 45cm và 50cm, phù hợp với nhu cầu nuôi cá cảnh đa dạng."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Hồ cá đúc có bảo hành không?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Mỗi sản phẩm hồ cá đúc AquaLux đều được bảo hành chính hãng 12 tháng cho lỗi kỹ thuật từ nhà sản xuất."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Giá sản phẩm AquaLux có thay đổi không?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Giá sản phẩm được cập nhật thường xuyên theo thị trường, vui lòng kiểm tra website để biết giá mới nhất."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Chính sách đổi trả sản phẩm như thế nào?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Khách hàng có thể đổi trả sản phẩm trong vòng 7 ngày nếu có lỗi do nhà sản xuất."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Có hỗ trợ giao hàng tận nơi không?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "AquaLux hỗ trợ giao hàng toàn quốc thông qua các đơn vị vận chuyển uy tín. Khách hàng tại TP.HCM có thể nhận hàng nhanh trong ngày."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Thời gian giao hàng của AquaLux là bao lâu?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Đơn hàng tại TP.HCM sẽ được giao trong 24-48 giờ, các tỉnh thành khác từ 3-5 ngày."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Có thể đặt hàng hồ cá AquaLux theo kích thước riêng không?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Có, AquaLux nhận gia công hồ cá theo yêu cầu với nhiều kích thước và độ dày kính khác nhau."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "AquaLux chấp nhận những phương thức thanh toán nào?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Khách hàng có thể thanh toán qua tiền mặt, chuyển khoản ngân hàng hoặc COD khi nhận hàng."
+                  }
+                }
+              ]
+            },
+
+            // 4. Product: Hồ cá đúc 30 (Và các Sản phẩm tiếp theo...)
+            {
+              "@type": "Product",
+              "@id": "https://aqualux.store#ho-ca-duc-30cm",
+              "name": "Hồ cá đúc 30",
+              "image": "https://aqualuxtphcm.github.io/aqualux/assets/img/Ho-ca-duc/Ho-ca-duc-30cm.webp",
+              "description": "Hồ cá đúc AquaLux kính dày 4mm, kích thước 30x17x20 cm, thiết kế hiện đại.",
+              "sku": "AQLX-301720",
+              "brand": {"@type": "Brand", "name": "AquaLux"},
+              "offers": {
+                "@type": "Offer",
+                "url": "https://aqualux.store#ho-ca-duc-30cm",
+                "priceCurrency": "VND",
+                "price": "180000",
+                "itemCondition": "https://schema.org/NewCondition",
+                "availability": "https://schema.org/InStock"
+              }
+            },
+            {
+              "@type": "Product",
+              "@id": "https://aqualux.store#ho-ca-duc-35cm",
+              "name": "Hồ cá đúc 35",
+              "image": "https://aqualuxtphcm.github.io/aqualux/assets/img/Ho-ca-duc/Ho-ca-duc-35cm.webp",
+              "description": "Hồ cá đúc AquaLux kính dày 4mm, kích thước 35x20x23 cm, phù hợp cá cảnh nhỏ.",
+              "sku": "AQLX-352023",
+              "brand": {"@type": "Brand", "name": "AquaLux"},
+              "offers": {
+                "@type": "Offer",
+                "url": "https://aqualux.store#ho-ca-duc-35cm",
+                "priceCurrency": "VND",
+                "price": "220000",
+                "itemCondition": "https://schema.org/NewCondition",
+                "availability": "https://schema.org/InStock"
+              }
+            },
+            {
+              "@type": "Product",
+              "@id": "https://aqualux.store#ho-ca-duc-40cm",
+              "name": "Hồ cá đúc 40",
+              "image": "https://aqualuxtphcm.github.io/aqualux/assets/img/Ho-ca-duc/Ho-ca-duc-40cm.webp",
+              "description": "Hồ cá đúc AquaLux kính dày 4mm, kích thước 40x23x27 cm, thiết kế sang trọng.",
+              "sku": "AQLX-402327",
+              "brand": {"@type": "Brand", "name": "AquaLux"},
+              "offers": {
+                "@type": "Offer",
+                "url": "https://aqualux.store#ho-ca-duc-40cm",
+                "priceCurrency": "VND",
+                "price": "270000",
+                "itemCondition": "https://schema.org/NewCondition",
+                "availability": "https://schema.org/InStock"
+              }
+            },
+            {
+              "@type": "Product",
+              "@id": "https://aqualux.store#ho-ca-duc-45cm",
+              "name": "Hồ cá đúc 45",
+              "image": "https://aqualuxtphcm.github.io/aqualux/assets/img/Ho-ca-duc/Ho-ca-duc-45cm.webp",
+              "description": "Hồ cá đúc AquaLux kính dày 4mm, kích thước 45x28x30 cm, bền đẹp, thẩm mỹ cao.",
+              "sku": "AQLX-452830",
+              "brand": {"@type": "Brand", "name": "AquaLux"},
+              "offers": {
+                "@type": "Offer",
+                "url": "https://aqualux.store#ho-ca-duc-45cm",
+                "priceCurrency": "VND",
+                "price": "330000",
+                "itemCondition": "https://schema.org/NewCondition",
+                "availability": "https://schema.org/InStock"
+              }
+            },
+            {
+              "@type": "Product",
+              "@id": "https://aqualux.store#ho-ca-duc-50cm",
+              "name": "Hồ cá đúc 50",
+              "image": "https://aqualuxtphcm.github.io/aqualux/assets/img/Ho-ca-duc/Ho-ca-duc-50cm.webp",
+              "description": "Hồ cá đúc AquaLux kính dày 5mm, kích thước 50x33x35 cm, cao cấp và an toàn.",
+              "sku": "AQLX-503335",
+              "brand": {"@type": "Brand", "name": "AquaLux"},
+              "offers": {
+                "@type": "Offer",
+                "url": "https://aqualux.store#ho-ca-duc-50cm",
+                "priceCurrency": "VND",
+                "price": "450000",
+                "itemCondition": "https://schema.org/NewCondition",
+                "availability": "https://schema.org/InStock"
+              }
+            },
+            {
+              "@type": "Product",
+              "@id": "https://aqualux.store#ho-ca-duc-80cm",
+              "name": "Hồ kính 80 (Sắp ra mắt)",
+              "image": "https://aqualuxtphcm.github.io/aqualux/assets/img/Ho-ca-duc/Ho-duc-80cm.webp",
+              "description": "Hồ kính 80 AquaLux sắp ra mắt, kích thước lớn, phù hợp không gian thủy sinh rộng.",
+              "sku": "AQLX-804040",
+              "brand": {"@type": "Brand", "name": "AquaLux"},
+              "offers": {
+                "@type": "Offer",
+                "url": "https://aqualux.store#ho-ca-duc-80cm",
+                "priceCurrency": "VND",
+                "price": "619000",
+                "itemCondition": "https://schema.org/NewCondition",
+                "availability": "https://schema.org/PreOrder"
+              }
+            },
+            {
+              "@type": "Product",
+              "@id": "https://aqualux.store#thuc-an-hong-ket",
+              "name": "Thức ăn cho cá Hồng Két - Red Parrot 260g",
+              "image": "https://aqualuxtphcm.github.io/aqualux/assets/img/Ho-ca-duc/thuc-an-cho-ca-hong-ket-parrot.webp",
+              "description": "Thức ăn cho cá Hồng Két, dạng viên nổi, tăng màu sắc và sức khỏe cá.",
+              "sku": "REDPARROT-260",
+              "brand": {"@type": "Brand", "name": "AquaLux"},
+              "offers": {
+                "@type": "Offer",
+                "url": "https://aqualux.store#thuc-an-hong-ket",
+                "priceCurrency": "VND",
+                "price": "85000",
+                "itemCondition": "https://schema.org/NewCondition",
+                "availability": "https://schema.org/InStock"
+              }
+            },
+            {
+              "@type": "Product",
+              "@id": "https://aqualux.store#extra-bio",
+              "name": "Men Vi Sinh EXTRA BIO 500ml",
+              "image": "https://aqualuxtphcm.github.io/aqualux/assets/img/Ho-ca-duc/Extra-Bio.webp",
+              "description": "Men vi sinh EXTRA BIO 500ml giúp lọc nước hồ cá trong sạch, an toàn.",
+              "sku": "EXTRABIO-500",
+              "brand": {"@type": "Brand", "name": "AquaLux"},
+              "offers": {
+                "@type": "Offer",
+                "url": "https://aqualux.store#extra-bio",
+                "priceCurrency": "VND",
+                "price": "160000",
+                "itemCondition": "https://schema.org/NewCondition",
+                "availability": "https://schema.org/InStock"
+              }
+            },
+            {
+              "@type": "Product",
+              "@id": "https://aqualux.store#multibio",
+              "name": "Men Vi Sinh MULTIBIO 125ml",
+              "image": "https://aqualuxtphcm.github.io/aqualux/assets/img/Ho-ca-duc/multibio.webp",
+              "description": "Men vi sinh MULTIBIO 125ml giúp phân hủy chất hữu cơ, duy trì môi trường ổn định.",
+              "sku": "MULTIBIO-125",
+              "brand": {"@type": "Brand", "name": "AquaLux"},
+              "offers": {
+                "@type": "Offer",
+                "url": "https://aqualux.store#multibio",
+                "priceCurrency": "VND",
+                "price": "45000",
+                "itemCondition": "https://schema.org/NewCondition",
+                "availability": "https://schema.org/InStock"
+              }
+            },
+            {
+              "@type": "Product",
+              "@id": "https://aqualux.store#combo-5-ho",
+              "name": "Combo 5 hồ kính đúc AquaLux (30-50cm)",
+              "image": "https://aqualuxtphcm.github.io/aqualux/assets/img/Ho-ca-duc/Combo-ho-ca-duc-aqualux.webp",
+              "description": "Combo 5 hồ kính đúc AquaLux (30-50cm) với giá ưu đãi, phù hợp cho người chơi cá cảnh.",
+              "sku": "COMBO-30-50",
+              "brand": {"@type": "Brand", "name": "AquaLux"},
+              "offers": {
+                "@type": "Offer",
+                "url": "https://aqualux.store#combo-5-ho",
+                "priceCurrency": "VND",
+                "price": "999000",
+                "itemCondition": "https://schema.org/NewCondition",
+                "availability": "https://schema.org/InStock"
+              }
+            },
+            
+            // 5. BreadcrumbList (Breadcrumb chung và chi tiết)
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {"@type": "ListItem", "position": 1, "name": "Trang chủ", "item": "https://aqualux.store"},
+                {"@type": "ListItem", "position": 2, "name": "Sản phẩm", "item": "https://aqualux.store/#portfolio"}
+              ]
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {"@type": "ListItem", "position": 1, "name": "Trang chủ", "item": "https://aqualux.store"},
+                {"@type": "ListItem", "position": 2, "name": "Sản phẩm", "item": "https://aqualux.store/#portfolio"},
+                {"@type": "ListItem", "position": 3, "name": "Hồ Cá Đúc 30x17x20 cm", "item": "https://aqualux.store/#ho-ca-duc-30cm"}
+              ]
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {"@type": "ListItem", "position": 1, "name": "Trang chủ", "item": "https://aqualux.store"},
+                {"@type": "ListItem", "position": 2, "name": "Sản phẩm", "item": "https://aqualux.store/#portfolio"},
+                {"@type": "ListItem", "position": 3, "name": "Hồ Cá Đúc 35x20x23 cm", "item": "https://aqualux.store/#ho-ca-duc-35cm"}
+              ]
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {"@type": "ListItem", "position": 1, "name": "Trang chủ", "item": "https://aqualux.store"},
+                {"@type": "ListItem", "position": 2, "name": "Sản phẩm", "item": "https://aqualux.store/#portfolio"},
+                {"@type": "ListItem", "position": 3, "name": "Hồ Cá Đúc 40x23x27 cm", "item": "https://aqualux.store/#ho-ca-duc-40cm"}
+              ]
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {"@type": "ListItem", "position": 1, "name": "Trang chủ", "item": "https://aqualux.store"},
+                {"@type": "ListItem", "position": 2, "name": "Sản phẩm", "item": "https://aqualux.store/#portfolio"},
+                {"@type": "ListItem", "position": 3, "name": "Hồ Cá Đúc 45x28x30 cm", "item": "https://aqualux.store/#ho-ca-duc-45cm"}
+              ]
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {"@type": "ListItem", "position": 1, "name": "Trang chủ", "item": "https://aqualux.store"},
+                {"@type": "ListItem", "position": 2, "name": "Sản phẩm", "item": "https://aqualux.store/#portfolio"},
+                {"@type": "ListItem", "position": 3, "name": "Hồ Cá Đúc 50x33x35 cm", "item": "https://aqualux.store/#ho-ca-duc-50cm"}
+              ]
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {"@type": "ListItem", "position": 1, "name": "Trang chủ", "item": "https://aqualux.store"},
+                {"@type": "ListItem", "position": 2, "name": "Sản phẩm", "item": "https://aqualux.store#portfolio"},
+                {"@type": "ListItem", "position": 3, "name": "Hồ kính 80 (sắp ra mắt)", "item": "https://aqualux.store#ho-kinh-80cm"}
+              ]
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {"@type": "ListItem", "position": 1, "name": "Trang chủ", "item": "https://aqualux.store"},
+                {"@type": "ListItem", "position": 2, "name": "Sản phẩm", "item": "https://aqualux.store#portfolio"},
+                {"@type": "ListItem", "position": 3, "name": "Thức ăn cho cá Hồng Két", "item": "https://aqualux.store#thuc-an-hong-ket"}
+              ]
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {"@type": "ListItem", "position": 1, "name": "Trang chủ", "item": "https://aqualux.store"},
+                {"@type": "ListItem", "position": 2, "name": "Sản phẩm", "item": "https://aqualux.store#portfolio"},
+                {"@type": "ListItem", "position": 3, "name": "Men Vi Sinh EXTRA BIO 500ml", "item": "https://aqualux.store#extra-bio"}
+              ]
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {"@type": "ListItem", "position": 1, "name": "Trang chủ", "item": "https://aqualux.store"},
+                {"@type": "ListItem", "position": 2, "name": "Sản phẩm", "item": "https://aqualux.store#portfolio"},
+                {"@type": "ListItem", "position": 3, "name": "Men Vi Sinh MULTIBIO 125ml", "item": "https://aqualux.store#multibio"}
+              ]
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {"@type": "ListItem", "position": 1, "name": "Trang chủ", "item": "https://aqualux.store"},
+                {"@type": "ListItem", "position": 2, "name": "Sản phẩm", "item": "https://aqualux.store#portfolio"},
+                {"@type": "ListItem", "position": 3, "name": "Combo 5 hồ kính đúc AquaLux (30-50cm)", "item": "https://aqualux.store#combo-ho-ca-duc"}
+              ]
+            }
+          ]
+        }
+    </script>
 </head>
 
 <body class="index-page">
@@ -136,7 +543,7 @@
 	</div>
 	<div class="col-lg-6">
 	<div class="hero-image" data-aos="zoom-out" data-aos-delay="300">
-	<img loading="lazy" alt="Hero Image" class="img-fluid" src="https://aqualuxtphcm.github.io/aqualux/assets/img/Ho-ca-duc/21be-ca-duc-aqualux.webp" width="796" height="612"/>
+	<img loading="lazy" alt="AquaLux - thương hiệu Hồ Cá Đúc Việt Nam" class="img-fluid" src="https://aqualuxtphcm.github.io/aqualux/assets/img/Ho-ca-duc/21be-ca-duc-aqualux.webp" width="796" height="612"/>
 	<div class="customers-badge" style="background:#4154f1">
 	<div class="customer-avatars">
 	<img loading="lazy" alt="Customer 1" class="avatar" src="https://aqualuxtphcm.github.io/aqualux/assets/img/avatar-1.webp"/>
@@ -210,7 +617,7 @@
 	<div class="container">
 	<div class="row gy-5">
 	<div class="col-xl-6" data-aos="zoom-out" data-aos-delay="100">
-	<img loading="lazy" alt="aquarium mini decor square" class="img-fluid" src="https://aqualuxtphcm.github.io/aqualux/assets/img/Ho-ca-duc/aquarium-mini-decor-square.webp" width="1536" height="1024"/>
+	<img loading="lazy" alt="Trang trí bể cá mini AquaLux" class="img-fluid" src="https://aqualuxtphcm.github.io/aqualux/assets/img/Ho-ca-duc/aquarium-mini-decor-square.webp" width="1536" height="1024"/>
 	</div>
 	<div class="col-xl-6 d-flex">
 	<div class="row align-self-center gy-4">
@@ -305,8 +712,8 @@
 	<div class="col-xl-6" data-aos="fade-up" data-aos-delay="300">
 	<div class="image-wrapper">
 	<div class="images position-relative" data-aos="zoom-out" data-aos-delay="400">
-	<img loading="lazy" alt="Business Meeting" class="img-fluid main-image rounded-4" src="https://aqualuxtphcm.github.io/aqualux/assets/img/Ho-ca-duc/san-xuat-ho-ca-duc.webp" width="2048" height="2048"/>
-	<img loading="lazy" alt="Team Discussion" class="img-fluid small-image rounded-4" src="https://aqualuxtphcm.github.io/aqualux/assets/img/Ho-ca-duc/be-ca-mini-aqualux-kinh-sieu-trong-03.webp" width="796" height="612"/>
+	<img loading="lazy" alt="Quy trình sản xuất hồ cá đúc AquaLux" class="img-fluid main-image rounded-4" src="https://aqualuxtphcm.github.io/aqualux/assets/img/Ho-ca-duc/san-xuat-ho-ca-duc.webp" width="2048" height="2048"/>
+	<img loading="lazy" alt="Hình ảnh chân thật hồ cá đúc" class="img-fluid small-image rounded-4" src="https://aqualuxtphcm.github.io/aqualux/assets/img/Ho-ca-duc/be-ca-mini-aqualux-kinh-sieu-trong-03.webp" width="796" height="612"/>
 	</div>
 	<div class="experience-badge floating">
 	<h3>AquaLux <span>TOP</span></h3>
@@ -856,7 +1263,7 @@
     </div><!-- End Section Title -->
 
     <h3 id="thong-bao" style="color:#000000; border-left:5px solid #9900FF; padding:5px 10px; margin-left:20px; margin-top:-20px; font-weight: 400;">
-      Nhanh tay sở hữu <b style="color:#9900FF">combo 5 hồ kính đúc Aqualux</b> (30-50cm) với giá tốt nhất thị trường. Số lượng có hạn!
+      <i class="bi bi-hexagon-half" style="color:#1a73e8; font-size: 30px;"></i> Nhanh tay sở hữu <b style="color:#9900FF">combo 5 hồ kính đúc Aqualux</b> (30-50cm) với giá tốt nhất thị trường. Số lượng có hạn!
     </h3>
 
     <div class="row g-5 align-items-center">
@@ -2289,343 +2696,6 @@
 				xem_ngay.addEventListener('click', (e)=>{ if(e.target === popup) closePopup(); });
 	   </script>
 	   
-	   <!-- //SEO website -->
-		<script type="application/ld+json">
-		{
-		  "@context": "https://schema.org",
-		  "@graph": [
-			{
-			  "@type": "Organization",
-			  "name": "AquaLux",
-			  "url": "https://aqualux.store",
-			  "logo": "https://aqualuxtphcm.github.io/aqualux/assets/img/logo.webp",
-			  "contactPoint": {
-				"@type": "ContactPoint",
-				"telephone": "+84 787 420 355",
-				"contactType": "customer service",
-				"areaServed": "VN",
-				"availableLanguage": ["vi", "en"]
-			  },
-			  "sameAs": [
-				"https://www.facebook.com/HocaAquaLux",
-				"https://www.youtube.com/@aqualuxofficial",
-				"https://aqualux.store"
-			  ]
-			},
-			{
-			  "@type": "WebSite",
-			  "url": "https://aqualux.store",
-			  "potentialAction": {
-				"@type": "SearchAction",
-				"target": "https://aqualux.store/search?q={search_term_string}",
-				"query-input": "required name=search_term_string"
-			  }
-			},
-			{
-			  "@type": "LocalBusiness",
-			  "name": "AquaLux - Hồ Cá Đúc",
-			  "address": {
-				"@type": "PostalAddress",
-				"streetAddress": "735 Bình Hoà 05 - Khu Phố Đông Ba",
-				"addressLocality": "Phường Bình Hoà",
-				"addressRegion": "Hồ Chí Minh",
-				"postalCode": "70000",
-				"addressCountry": "VN"
-			  },
-			  "telephone": "+84787420355",
-			  "openingHours": [
-				"Mo-Sa 08:00-19:00"
-			  ],
-			  "image": "https://aqualuxtphcm.github.io/aqualux/assets/img/logo.webp",
-			  "geo": {
-				"@type": "GeoCoordinates",
-				"latitude": "10.825674",
-				"longitude": "106.666986"
-			  }
-			}
-		  ]
-		}
-		</script>	   
-	   
-       <script type="application/ld+json">
-			{
-			  "@context": "https://schema.org/",
-			  "@type": "Product",
-			  "name": "Hồ Cá Đúc Kính Dày 4mm: 30x17x20 cm",
-			  "image": "https://aqualuxtphcm.github.io/aqualux/assets/img/Ho-ca-duc/Ho-ca-duc-30cm.webp",
-			  "description": "Hồ cá đúc AquaLux cao cấp, thiết kế hiện đại, phù hợp trang trí nội thất và phong thủy. Kính dày 4mm, kích thước 30x17x20 cm.",
-			  "sku": "AQLX-301720",
-			  "brand": {
-				"@type": "Brand",
-				"name": "AquaLux"
-			  },
-			  "offers": {
-				"@type": "Offer",
-				"url": "https://aqualux.store",
-				"priceCurrency": "VND",
-				"price": "180000",
-				"priceValidUntil": "2025-12-31",
-				"itemCondition": "https://schema.org/NewCondition",
-				"availability": "https://schema.org/InStock"
-			  },
-			  "aggregateRating": {
-				"@type": "AggregateRating",
-				"ratingValue": "5",
-				"reviewCount": "15"
-			  }
-			}
-		</script>
-		
-		<script type="application/ld+json">
-			{
-			  "@context": "https://schema.org/",
-			  "@type": "Product",
-			  "name": "Hồ Cá Đúc Kính Dày 4mm: 35x20x23 cm",
-			  "image": "https://aqualuxtphcm.github.io/aqualux/assets/img/Ho-ca-duc/Ho-ca-duc-35cm.webp",
-			  "description": "Hồ cá đúc cao cấp AquaLux, kính dày 4mm. Kích thước 35x20x23 cm (dài-rộng-cao). Thiết kế hiện đại, phù hợp trang trí nội thất, bể cá mini, hoặc nuôi cá betta, cá guppy.",
-			  "sku": "AQLX-352023",
-			  "brand": {
-				"@type": "Brand",
-				"name": "AquaLux"
-			  },
-			  "offers": {
-				"@type": "Offer",
-				"url": "https://aqualux.store",
-				"priceCurrency": "VND",
-				"price": "220000",
-				"priceValidUntil": "2025-12-31",
-				"itemCondition": "https://schema.org/NewCondition",
-				"availability": "https://schema.org/InStock"
-			  },
-			  "aggregateRating": {
-				"@type": "AggregateRating",
-				"ratingValue": "4.8",
-				"reviewCount": "12"
-			  }
-			}
-		</script>
-        
-		<script type="application/ld+json">
-			{
-			  "@context": "https://schema.org/",
-			  "@type": "Product",
-			  "name": "Hồ Cá Đúc Kính Dày 4mm: 40x23x27 cm",
-			  "image": "https://aqualuxtphcm.github.io/aqualux/assets/img/Ho-ca-duc/Ho-ca-duc-40cm.webp",
-			  "description": "Hồ kính đúc AquaLux chất lượng cao, kính dày 4mm. Kích thước 40x23x27 cm (dài-rộng-cao). Tuyệt tác hồ kính uốn cong liền mạch, lý tưởng cho bể thủy sinh, nuôi cá cảnh nhỏ và trung bình.",
-			  "sku": "AQLX-402327",
-			  "brand": {
-				"@type": "Brand",
-				"name": "AquaLux"
-			  },
-			  "offers": {
-				"@type": "Offer",
-				"url": "https://aqualux.store",
-				"priceCurrency": "VND",
-				"price": "270000",
-				"priceValidUntil": "2025-12-31",
-				"itemCondition": "https://schema.org/NewCondition",
-				"availability": "https://schema.org/InStock"
-			  },
-			  "aggregateRating": {
-				"@type": "AggregateRating",
-				"ratingValue": "4.9",
-				"reviewCount": "20"
-			  }
-			}
-		</script>
-		
-		<script type="application/ld+json">
-			{
-			  "@context": "https://schema.org/",
-			  "@type": "Product",
-			  "name": "Hồ Cá Đúc Kính Dày 4mm: 45x28x30 cm",
-			  "image": "https://aqualuxtphcm.github.io/aqualux/assets/img/Ho-ca-duc/Ho-ca-duc-45cm.webp",
-			  "description": "Bể cá đúc AquaLux, kính dày 4mm. Kích thước 45x28x30 cm (dài-rộng-cao). Sản phẩm bền đẹp, thẩm mỹ cao, phù hợp trang trí văn phòng, phòng khách và các không gian sống hiện đại.",
-			  "sku": "AQLX-452830",
-			  "brand": {
-				"@type": "Brand",
-				"name": "AquaLux"
-			  },
-			  "offers": {
-				"@type": "Offer",
-				"url": "https://aqualux.store",
-				"priceCurrency": "VND",
-				"price": "330000",
-				"priceValidUntil": "2025-12-31",
-				"itemCondition": "https://schema.org/NewCondition",
-				"availability": "https://schema.org/InStock"
-			  },
-			  "aggregateRating": {
-				"@type": "AggregateRating",
-				"ratingValue": "5",
-				"reviewCount": "18"
-			  }
-			}
-		</script>
-		
-		<script type="application/ld+json">
-			{
-			  "@context": "https://schema.org/",
-			  "@type": "Product",
-			  "name": "Hồ Cá Đúc Kính Dày 5mm: 50x33x35 cm",
-			  "image": "https://aqualuxtphcm.github.io/aqualux/assets/img/Ho-ca-duc/Ho-ca-duc-50cm.webp",
-			  "description": "Hồ kính đúc AquaLux cao cấp, kính dày 5mm. Kích thước 50x33x35 cm (dài-rộng-cao). Kính cường lực trong suốt, chịu lực tốt, là lựa chọn hoàn hảo cho các tín đồ cá cảnh muốn tạo một không gian thủy sinh đẹp mắt.",
-			  "sku": "AQLX-503335",
-			  "brand": {
-				"@type": "Brand",
-				"name": "AquaLux"
-			  },
-			  "offers": {
-				"@type": "Offer",
-				"url": "https://aqualux.store",
-				"priceCurrency": "VND",
-				"price": "450000",
-				"priceValidUntil": "2025-12-31",
-				"itemCondition": "https://schema.org/NewCondition",
-				"availability": "https://schema.org/InStock"
-			  },
-			  "aggregateRating": {
-				"@type": "AggregateRating",
-				"ratingValue": "4.9",
-				"reviewCount": "15"
-			  }
-			}
-		</script>
-		
-		
-
-<!-- FAQPage Schema -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Hồ cá đúc khác gì so với hồ cá dán thông thường?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Hồ cá đúc AquaLux được sản xuất bằng công nghệ uốn cong liền khối, không có mối nối, an toàn, thẩm mỹ và bền hơn so với hồ cá dán keo thông thường."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Hồ cá đúc có bền không?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Sản phẩm được làm từ kính siêu trong, độ dày từ 4mm đến 5mm, có khả năng chịu lực tốt và bền bỉ theo thời gian."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "AquaLux có những kích thước hồ cá nào?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Hiện tại AquaLux cung cấp nhiều kích thước: 30cm, 35cm, 40cm, 45cm và 50cm, phù hợp với nhu cầu nuôi cá cảnh đa dạng."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Có hỗ trợ giao hàng tận nơi không?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "AquaLux hỗ trợ giao hàng toàn quốc thông qua các đơn vị vận chuyển uy tín. Khách hàng tại TP.HCM có thể nhận hàng nhanh trong ngày."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Hồ cá đúc có bảo hành không?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Mỗi sản phẩm hồ cá đúc AquaLux đều được bảo hành chính hãng 12 tháng cho lỗi kỹ thuật từ nhà sản xuất."
-      }
-    }
-  ]
-}
-</script>
-
-<!-- BreadcrumbList cho toàn site -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Trang chủ",
-      "item": "https://aqualux.store"
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Sản phẩm",
-      "item": "https://aqualux.store/#portfolio"
-    }
-  ]
-}
-</script>
-
-<!-- Breadcrumb cho từng sản phẩm -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {"@type": "ListItem", "position": 1, "name": "Trang chủ", "item": "https://aqualux.store"},
-    {"@type": "ListItem", "position": 2, "name": "Sản phẩm", "item": "https://aqualux.store/#portfolio"},
-    {"@type": "ListItem", "position": 3, "name": "Hồ Cá Đúc 30x17x20 cm", "item": "https://aqualux.store/#ho-ca-duc-30cm"}
-  ]
-}
-</script>
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {"@type": "ListItem", "position": 1, "name": "Trang chủ", "item": "https://aqualux.store"},
-    {"@type": "ListItem", "position": 2, "name": "Sản phẩm", "item": "https://aqualux.store/#portfolio"},
-    {"@type": "ListItem", "position": 3, "name": "Hồ Cá Đúc 35x20x23 cm", "item": "https://aqualux.store/#ho-ca-duc-35cm"}
-  ]
-}
-</script>
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {"@type": "ListItem", "position": 1, "name": "Trang chủ", "item": "https://aqualux.store"},
-    {"@type": "ListItem", "position": 2, "name": "Sản phẩm", "item": "https://aqualux.store/#portfolio"},
-    {"@type": "ListItem", "position": 3, "name": "Hồ Cá Đúc 40x23x27 cm", "item": "https://aqualux.store/#ho-ca-duc-40cm"}
-  ]
-}
-</script>
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {"@type": "ListItem", "position": 1, "name": "Trang chủ", "item": "https://aqualux.store"},
-    {"@type": "ListItem", "position": 2, "name": "Sản phẩm", "item": "https://aqualux.store/#portfolio"},
-    {"@type": "ListItem", "position": 3, "name": "Hồ Cá Đúc 45x28x30 cm", "item": "https://aqualux.store/#ho-ca-duc-45cm"}
-  ]
-}
-</script>
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {"@type": "ListItem", "position": 1, "name": "Trang chủ", "item": "https://aqualux.store"},
-    {"@type": "ListItem", "position": 2, "name": "Sản phẩm", "item": "https://aqualux.store/#portfolio"},
-    {"@type": "ListItem", "position": 3, "name": "Hồ Cá Đúc 50x33x35 cm", "item": "https://aqualux.store/#ho-ca-duc-50cm"}
-  ]
-}
-</script>
 
 </body>
 </html>
