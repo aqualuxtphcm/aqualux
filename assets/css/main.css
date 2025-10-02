@@ -2126,25 +2126,12 @@ section,
   color: #333;
 }
 /* Logo trong popup */
-.promo-popup .popup-content .popup-logo {
+.popup-logo {
   display: block;
-  max-width: 100%; /* Đảm bảo ảnh không vượt quá phần tử cha */
-  height: auto;
-  margin: -45px auto 1px;  /* căn giữa và cách dưới 16px */
+  max-width: 150px;     /* điều chỉnh kích thước */
+  margin: -50px auto 1px;  /* căn giữa và cách dưới 16px */
 }
 
-/* Nội dung địa chỉ - SĐT */
-.promo-popup .popup-content .popup-info {
-	
-	box-shadow: rgba(240, 46, 170, 0.4) 0px 5px,
-				  rgba(240, 46, 170, 0.3) 0px 10px,
-				  rgba(240, 46, 170, 0.2) 0px 15px,
-				  rgba(240, 46, 170, 0.1) 0px 20px,
-				  rgba(240, 46, 170, 0.05) 0px 25px;
-	text-align: left;
-	padding-bottom:1px;
-					  
-}
 
 /* Tiêu đề */
 #popup-title {
@@ -2160,11 +2147,11 @@ section,
   font-size: 26px;
   font-weight: 600;
   color: #ff9800; /* màu nhấn vàng cam */
-  margin-bottom: 5px;
+  margin-bottom: 15px;
   line-height: 1.3;
   /* border-radius: 20px;    */     /* bo góc 8px */
   /* border: 1px solid #000;  */   /* viền nét liền (solid) */
-  padding: 10px 10px 5px 10px;
+  padding: 10px 10px 10px 10px;
   /* Background:#f3f4f6; */
   /* box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px; */
 }
@@ -2190,7 +2177,7 @@ section,
   border: none;
   border-top: 1px solid blue;
   width: 90%;
-  margin: 3px auto 12px;  /* auto sẽ căn giữa theo chiều ngang */
+  margin: 10px auto 10px;  /* auto sẽ căn giữa theo chiều ngang */
   
 }
 
@@ -2211,16 +2198,13 @@ section,
 .contact-line span {
   display: block;
   text-align: left;  /* Buộc nội dung địa chỉ căn trái */
-  
 }
-.contact-fb{
-	margin-top:-10px;
-}
-.contact-fb .fb-link {
+
+.fb-link {
   color: #1877f2;          /* Màu xanh Facebook */
   text-decoration: none;
   font-weight: 500;
-    
+  
 }
 
 .fb-link:hover {
@@ -2278,25 +2262,10 @@ section,
 }
 
 /* Responsive nhỏ */
-
-/* @media (max-width: 768px){
-  #popup-title {font-size: 30px;}
-  #popup-message {font-size: 28px;}
-	
-} */
-@media (max-width: 576px) {
-  #popup-title {font-size: 28px;}
-  #popup-message {font-size: 26px;}
-  .promo-popup .popup-content .popup-info 
-	
-	box-shadow: rgba(240, 46, 170, 0.4) 0px 5px,
-				  rgba(240, 46, 170, 0.3) 0px 10px,
-				  rgba(240, 46, 170, 0.2) 0px 15px,
-				  rgba(240, 46, 170, 0.1) 0px 20px,
-				  rgba(240, 46, 170, 0.05) 0px 25px;
-	text-align: left;
-	padding-bottom:1px;
-  /* .cta-btn {font-size: 16px; padding: 10px 20px;} */
+@media (max-width: 480px) {
+  #popup-title {font-size: 22px;}
+  #popup-message {font-size: 18px;}
+  .cta-btn {font-size: 16px; padding: 10px 20px;}
 }
 
 
