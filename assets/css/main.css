@@ -10,12 +10,16 @@
 # Font & Color Variables
 # Help: https://bootstrapmade.com/color-system/
 --------------------------------------------------------------*/
-/* Fonts */
+/* Fonts - Đã tối ưu chỉ dùng Roboto */
 :root {
+  /* Thiết lập Roboto làm font mặc định cho mọi thứ */
   --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Nunito",  sans-serif;
-  --nav-font: "Poppins",  sans-serif;
+  
+  /* Đặt tiêu đề và menu dùng font mặc định (Roboto) */
+  --heading-font: var(--default-font); 
+  --nav-font: var(--default-font);
 }
+
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
