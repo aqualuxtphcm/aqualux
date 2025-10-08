@@ -76,3 +76,5 @@
 .bi-twitter-x::before { content: "\f8db"; }
 .bi-x-circle-fill::before { content: "\f622"; }
 .bi-zoom-in::before { content: "\f62c"; }
+.bi-x::before { content: "\f62a"; }
+
